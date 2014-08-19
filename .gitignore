@@ -3,8 +3,8 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>img.chromoji { width:1em !important; height:1em !important; }.chromoji-font, #chromoji-font { font-size:1em !important; }</style><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">Phase1/*.dvi
 Phase1/*.aux
 Phase1/*.log
-Phase1/*.synctex.gz
+Phase1/*.gz
 Phase2/*.dvi
 Phase2/*.aux
 Phase2/*.log
-Phase2/*.synctex.gz</pre></body></html>
+Phase2/*.gz</pre></body></html>
