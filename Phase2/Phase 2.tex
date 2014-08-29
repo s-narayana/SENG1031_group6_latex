@@ -21,7 +21,8 @@
 }
 
 % command to use template
-\newcommand{\FeatureC}[4]{ 
+\newcommand{\CFeature}[4]{
+\noindent \textbf{Connextra Feature:}
 	\begin{quote}
 	\begin{tabular}{rl}
 	\textbf{AS A} & #1\\
@@ -59,98 +60,109 @@
 \section*{Deliverable 1}
 \subsection{User Stories}
 
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %%%%%%%%%% TEMPLATE %%%%%%%%%%
 % select any number of these
 \begin{framed}
+
 \Requirement{Does not have more advanced searching of repositories to find more readily contributable open source projects.}\\[0.2cm]
-\Feature{An advanced search panel for finding repositories that I can commit to.}\\[0.4cm]
+
+\hrule~\\
+
+\Feature{An advanced search panel for finding repositories that I can commit to.}\\[0.2cm]
+
 \noindent \textbf{Scenario}:
 \begin{quote}
 \begin{tabular}{rl}
 \GivenSc & that I am on the main page\\
-\AndSc & lel\\
-\WhenSc & I click on "Find Repos"\\
+%\AndSc & lel\\
+\WhenSc & I click on ``Find Repos"\\
 \ThenSc & I can see a list of repositories with some basic stats next to each one
 \end{tabular}
 \end{quote}
-~\\
-\Feature{}
-\begin{quote}
-\FeatureC{User (contributor}{I}{can help other developers}{Find repositories that I can contribute to}
-\end{quote}
+
+\CFeature{user (\textsf{GitHub} contributor)}{I}{can help other developers}{Find repositories that I can contribute to}
+
+\hrule~\\
 
 \Feature{Filter repositories based on a number of parameters.}\\[0.4cm]
 \noindent \textbf{Scenario}:
 \begin{quote}
 \begin{tabular}{rl}
 \GivenSc & that I am on the main page\\
-\AndSc & lel\\
-\WhenSc & I select some parameters and click on "Find Repos"\\
+%\AndSc & lel\\
+\WhenSc & I select some parameters and click on ``Find Repos''\\
 \ThenSc & I can see a sorted list of repositories based on my parameters
 \end{tabular}
 \end{quote}
-~\\
-\Feature{}
-\begin{quote}
-\FeatureC{User (contributor}{I}{can find more relevant repositories}{Filter a list of repositories}
-\end{quote}
-\
+
+\CFeature{user (\textsf{GitHub} contributor)}{I}{can find more relevant repositories}{filter a list of repositories}
 \end{framed}
 %%% END TEMPLATE %%%
 
-%just copy and pasted, maybe some errors below?
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       %%%%%%%%%% TEMPLATE %%%%%%%%%%
 % select any number of these
 \begin{framed}
 \Requirement{Does not display enough statistics to aid with choosing a new project.}\\[0.2cm]
-\Feature{Repositories lists the average amount of commits per contributor.}\\[0.4cm]
+
+\hrule~\\
+
+\Feature{Repositories lists the average amount of commits per contributor.}\\[0.2cm]
+
 \noindent \textbf{Scenario}:
 \begin{quote}
 \begin{tabular}{rl}
 \GivenSc & that I am viewing a repository's statistics\\
-\AndSc & lel\\
+%\AndSc & lel\\
 \WhenSc & I click on "Contributors"\\
 \ThenSc & I can view the average commits per contributor
 \end{tabular}
 \end{quote}
-~\\
-\Feature{}
-\begin{quote}
-\FeatureC{User (contributor}{I}{can view other contributors motivation}{Find repositories that I can contribute to}
-\end{quote}
+
+\CFeature{User (\textsf{GitHub} contributor}{I}{can view other contributors motivation}{Find repositories that I can contribute to}
+
+\hrule~\\
 
 \Feature{Repositories graphs average stay time of contributors}\\[0.4cm]
+
 \noindent \textbf{Scenario}:
 \begin{quote}
 \begin{tabular}{rl}
 \GivenSc & that I am viewing a repository's statistics\\
-\AndSc & lel\\
+%\AndSc & lel\\
 \WhenSc & I click on "Loyalty"\\
 \ThenSc & I can see whether other contributors stay long
 \end{tabular}
 \end{quote}
-~\\
-\Feature{}
-\begin{quote}
-\FeatureC{User (contributor}{I}{know how much I need to contribute}{View a Comprehensive list on average activity time}
-\end{quote}
+
+\CFeature{user (\textsf{GitHub} contributor)}{I}{know how much I need to contribute}{View a Comprehensive list on average activity time}
 \
 \end{framed}
 %%% END TEMPLATE %%%
 
-
-% select any number of these
-\begin{framed}
-
-%%% TEMPLATE %%%
 \pagebreak
 \begin{framed}
+(sanjay)\\
+%%% TEMPLATE %%%
 % Requirement (problem statement)
 \noindent \textbf{Requirement}: Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.\\[0.2cm]
+
+\hrule~\\
+
 % Feature
-\noindent \textbf{Feature}: When a section of code is selected, a hyperlink is provided, linking to the documentation. Vice-versa, the wiki documentation contains hyperlinks back to relevant section of code.\\[0.4cm]
+\noindent \textbf{Feature}: When a section of code is selected, a hyperlink is provided, linking to the documentation. Vice-versa, the wiki documentation contains hyperlinks back to relevant section of code.\\[0.2cm]
+
 % Scenario
 \noindent \textbf{Scenario}:
 \begin{quote}
@@ -161,12 +173,11 @@
 \textbf{WHEN} & l\\
 \textbf{AND} & l\\
 \textbf{THEN} & l
-\end{tabular}
+\end{tabular}%f
 \end{quote}
-~\\
 
 % Connextra Notation
-\noindent \FeatureC{group of dinosaurs}{we}{can find prey}{eat food}
+\noindent \CFeature{group of dinosaurs}{we}{can find prey}{eat food}
 \end{framed}
 
 \end{document}
