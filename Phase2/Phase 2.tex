@@ -151,6 +151,54 @@
 \end{framed}
 %%% END TEMPLATE %%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %%%%%%%%%% TEMPLATE %%%%%%%%%%
+% select any number of these
+\begin{framed}
+\Requirement{Does not have a visual way to view a whole project.}\\[0.2cm]
+
+\hrule~\\
+
+\Feature{Diagrams based on how files interact with one another}\\[0.2cm]
+
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am viewing a project or file\\
+%\AndSc & lel\\
+\WhenSc & I click on “Model”\\
+\ThenSc & I can get a diagram of which files utilise each other
+\AndSc & I can click on the files to open them in a new window
+\end{tabular}
+\end{quote}
+
+\CFeature{User (\textsf{GitHub} contributor}{I}{can gain a deeper understanding of how the project utilizes other projects}{Find more projects linked to the current project}
+
+\hrule~\\
+
+\Feature{Holistic view of functions of code}\\[0.4cm]
+
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am viewing a file\\
+%\AndSc & lel\\
+\WhenSc & I click on “Collapse” next to a line of code\\
+\ThenSc & the code inside the function is hidden\\
+\AndSc & is replaced with arrows showing where the function links to\\
+\WhenSc & I click on “Collapse All”\\
+\ThenSc & the code inside all functions are hidden\\
+\AndSc & are replaced with a list using arrows to show where functions link to\\
+\end{tabular}
+\end{quote}
+
+\CFeature{user (\textsf{GitHub} contributor)}{I}{can easily understand how a file works}{get a simplified version of the current code}
+\
+\end{framed}
+%%% END TEMPLATE %%%
+
+
 \pagebreak
 \begin{framed}
 (sanjay)\\
