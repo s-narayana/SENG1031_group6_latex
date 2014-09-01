@@ -68,7 +68,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      %%%%%%%%%% TEMPLATE %%%%%%%%%%
+     %%%%%%%%%% TEMPLATE %%%%%%%%%%
 % select any number of these
 \begin{framed}
 
@@ -125,12 +125,12 @@
 \begin{tabular}{rl}
 \GivenSc & that I am viewing a repository's statistics\\
 %\AndSc & lel\\
-\WhenSc & I click on "Contributors"\\
+\WhenSc & I click on ``Contributors"\\
 \ThenSc & I can view the average commits per contributor
 \end{tabular}
 \end{quote}
 
-\CFeature{User (\textsf{GitHub} contributor}{I}{can view other contributors motivation}{Find repositories that I can contribute to}
+\CFeature{User (\textsf{GitHub} contributor)}{I}{can view other contributors motivation}{Find repositories that I can contribute to}
 
 \hrule~\\
 
@@ -141,7 +141,7 @@
 \begin{tabular}{rl}
 \GivenSc & that I am viewing a repository's statistics\\
 %\AndSc & lel\\
-\WhenSc & I click on "Loyalty"\\
+\WhenSc & I click on ``Loyalty"\\
 \ThenSc & I can see whether other contributors stay long
 \end{tabular}
 \end{quote}
@@ -156,28 +156,83 @@
 (sanjay)\\
 %%% TEMPLATE %%%
 % Requirement (problem statement)
-\noindent \textbf{Requirement}: Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.\\[0.2cm]
+\Requirement{Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.}\\[0.2cm]
 
 \hrule~\\
 
 % Feature
-\noindent \textbf{Feature}: When a section of code is selected, a hyperlink is provided, linking to the documentation. Vice-versa, the wiki documentation contains hyperlinks back to relevant section of code.\\[0.2cm]
+\noindent \Feature{When a section of code is selected, a hyperlink is provided, linking to the documentation. Vice-versa, the wiki documentation contains hyperlinks back to relevant section of code.}\\[0.2cm]
 
 % Scenario
 \noindent \textbf{Scenario}:
 \begin{quote}
 \begin{tabular}{rl}
-\textbf{GIVEN} & l\\
-\textbf{WHEN} & l\\
-\textbf{THEN} & l\\
-\textbf{WHEN} & l\\
-\textbf{AND} & l\\
-\textbf{THEN} & l
-\end{tabular}%f
+\GivenSc & \\
+\AndSc & \\
+\WhenSc &\\
+\ThenSc & 
+\end{tabular}
 \end{quote}
 
 % Connextra Notation
 \noindent \CFeature{group of dinosaurs}{we}{can find prey}{eat food}
+\end{framed}
+
+
+
+
+% paul's user stories
+\pagebreak
+\begin{framed}
+(PAUL)\\
+\Requirement{Does not have a visual way to view a whole project.}\\[0.2cm]
+
+\hrule~\\
+
+\Feature{Diagrams based on how files interact with one another}\\[0.2cm]
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am viewing a project or file\\
+\WhenSc & I click on “Model”\\
+\ThenSc & I can get a diagram of which files utilise each other.\\
+\AndSc & I can click on the files to open them in a new window.
+\end{tabular}
+\end{quote}
+
+% Feature
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & that I am viewing a project or file\\
+\textbf{SO THAT I} & can gain a deeper understanding of how the project\\
+                   & utilises other projects.\\
+\textbf{I WANT TO} & Find more projects linked to the current project.
+\end{tabular}
+\end{quote}
+
+\hrule~\\
+
+\Feature{ Holistic view of functions of code
+Scenario:}\\[0.2cm]
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am viewing a file\\
+\WhenSc & I click on ``Collapse'' next to a line of code\\
+\ThenSc & the code inside the function is hidden.\\
+\AndSc & is replaced with arrows showing where the function links to\\
+\WhenSc & I click on ``Collapse All''\\
+\ThenSc & the code inside all functions are hidden\\
+\AndSc & are replaced with a list using arrows to show where functions link to
+\end{tabular}
+\end{quote}
+
+\noindent \CFeature{User (\textsf{GitHub} contributor)}{I}{can easily understand how a file works.}{get a simplified version of the current code.}
 \end{framed}
 
 \end{document}
