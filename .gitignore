@@ -103,3 +103,6 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+
+.db

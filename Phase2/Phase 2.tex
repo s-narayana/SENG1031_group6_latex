@@ -61,22 +61,15 @@
 \subsection{User Stories}
 
 
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-     %%%%%%%%%% TEMPLATE %%%%%%%%%%
-% select any number of these
 \begin{framed}
-
 \Requirement{Does not have more advanced searching of repositories to find more readily contributable open source projects.}\\[0.2cm]
 
 \hrule~\\
 
 \Feature{An advanced search panel for finding repositories that I can commit to.}\\[0.2cm]
+
+
+\CFeature{user (\textsf{GitHub} contributor)}{I}{can help other developers}{Find repositories that I can contribute to}
 
 \noindent \textbf{Scenario}:
 \begin{quote}
@@ -88,11 +81,12 @@
 \end{tabular}
 \end{quote}
 
-\CFeature{user (\textsf{GitHub} contributor)}{I}{can help other developers}{Find repositories that I can contribute to}
-
 \hrule~\\
 
-\Feature{Filter repositories based on a number of parameters.}\\[0.4cm]
+\Feature{Filter repositories based on a number of parameters.}\\[0.2cm]
+
+\CFeature{user (\textsf{GitHub} contributor)}{I}{can find more relevant repositories}{filter a list of repositories}
+
 \noindent \textbf{Scenario}:
 \begin{quote}
 \begin{tabular}{rl}
@@ -102,23 +96,19 @@
 \ThenSc & I can see a sorted list of repositories based on my parameters
 \end{tabular}
 \end{quote}
-
-\CFeature{user (\textsf{GitHub} contributor)}{I}{can find more relevant repositories}{filter a list of repositories}
 \end{framed}
-%%% END TEMPLATE %%%
 
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      %%%%%%%%%% TEMPLATE %%%%%%%%%%
-% select any number of these
 \begin{framed}
 \Requirement{Does not display enough statistics to aid with choosing a new project.}\\[0.2cm]
 
 \hrule~\\
 
 \Feature{Repositories lists the average amount of commits per contributor.}\\[0.2cm]
+
+\CFeature{User (\textsf{GitHub} contributor)}{I}{can view other contributors motivation}{Find repositories that I can contribute to}
 
 \noindent \textbf{Scenario}:
 \begin{quote}
@@ -130,11 +120,11 @@
 \end{tabular}
 \end{quote}
 
-\CFeature{User (\textsf{GitHub} contributor)}{I}{can view other contributors motivation}{Find repositories that I can contribute to}
-
 \hrule~\\
 
-\Feature{Repositories graphs average stay time of contributors}\\[0.4cm]
+\Feature{Repositories graphs average stay time of contributors.}\\[0.4cm]
+
+\CFeature{user (\textsf{GitHub} contributor)}{I}{know how much I need to contribute}{View a Comprehensive list on average activity time}
 
 \noindent \textbf{Scenario}:
 \begin{quote}
@@ -145,63 +135,21 @@
 \ThenSc & I can see whether other contributors stay long
 \end{tabular}
 \end{quote}
-
-\CFeature{user (\textsf{GitHub} contributor)}{I}{know how much I need to contribute}{View a Comprehensive list on average activity time}
-\
 \end{framed}
-%%% END TEMPLATE %%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      %%%%%%%%%% TEMPLATE %%%%%%%%%%
-% select any number of these
-\begin{framed}
-\Requirement{Does not have a visual way to view a whole project.}\\[0.2cm]
 
-\hrule~\\
 
-\Feature{Diagrams based on how files interact with one another}\\[0.2cm]
 
-\noindent \textbf{Scenario}:
-\begin{quote}
-\begin{tabular}{rl}
-\GivenSc & that I am viewing a project or file\\
-%\AndSc & lel\\
-\WhenSc & I click on ``Model''\\
-\ThenSc & I can get a diagram of which files utilise each other.\\
-\AndSc & I can click on the files to open them in a new window
-\end{tabular}
-\end{quote}
 
-\CFeature{User (\textsf{GitHub} contributor}{I}{can gain a deeper understanding of how the project utilizes other projects}{Find more projects linked to the current project}
 
-\hrule~\\
 
-\Feature{Holistic view of functions of code}\\[0.4cm]
 
-\noindent \textbf{Scenario}:
-\begin{quote}
-\begin{tabular}{rl}
-\GivenSc & that I am viewing a file\\
-%\AndSc & lel\\
-\WhenSc & I click on “Collapse” next to a line of code\\
-\ThenSc & the code inside the function is hidden\\
-\AndSc & is replaced with arrows showing where the function links to\\
-\WhenSc & I click on “Collapse All”\\
-\ThenSc & the code inside all functions are hidden\\
-\AndSc & are replaced with a list using arrows to show where functions link to\\
-\end{tabular}
-\end{quote}
 
-\CFeature{user (\textsf{GitHub} contributor)}{I}{can easily understand how a file works}{get a simplified version of the current code}
-\
-\end{framed}
-%%% END TEMPLATE %%%
 
 
 \pagebreak
 \begin{framed}
-(sanjay)\\
 %%% TEMPLATE %%%
 % Requirement (problem statement)
 \Requirement{Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.}\\[0.2cm]
@@ -209,35 +157,133 @@
 \hrule~\\
 
 % Feature
-\noindent \Feature{When a section of code is selected, a hyperlink is provided, linking to the documentation. Vice-versa, the wiki documentation contains hyperlinks back to relevant section of code.}\\[0.2cm]
+\noindent \Feature{Code in repository opens a hyperlink to the complete wiki documentation.}\\[0.2cm]
+
+% Feature
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & Code viewer\\
+\textbf{SO THAT I} & I can read the explanation for written code\\
+\textbf{I WANT TO} & understand the inner-workings of raw code.
+\end{tabular}
+\end{quote}
+
 
 % Scenario
 \noindent \textbf{Scenario}:
 \begin{quote}
 \begin{tabular}{rl}
-\GivenSc & \\
-\AndSc & \\
-\WhenSc &\\
-\ThenSc & 
+\GivenSc & that I am viewing raw code in a repository\\
+\WhenSc & I click on a function\\
+\ThenSc & I should be linked to specific section of wiki explaining the code. 
 \end{tabular}
 \end{quote}
 
-% Connextra Notation
-\noindent \CFeature{group of dinosaurs}{we}{can find prey}{eat food}
+
+% Feature - GitHub contributor
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & \textsf{GitHub} contributor\\
+\textbf{SO THAT I} & I possess the tools to form the link between \\
+                   & raw code and documentation \\
+\textbf{I WANT TO} & set up a hyperlink for code viewers to understand my\\
+                   &  written code.
+\end{tabular}
+\end{quote}
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am developing a wiki documentation\\
+\WhenSc & I click on ``Connect Code to Wiki''\\
+\AndSc & I specify which line I want to connect to\\
+\ThenSc & I should be able to set up a hyperlink to the wiki documentation.
+\end{tabular}
+\end{quote}
+
+\hrule~\\
+
+\noindent\Feature{A small tool tip summary of that data type is shown (showing its methods and attributes.)}\\[0.2cm]
+
+
+% Feature
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & Code viewer\\
+\textbf{SO THAT I} & I can see the data type's methods \& attributes \\
+\textbf{I WANT TO} & understand the implementation of data types in written code.
+\end{tabular}
+\end{quote}
+
+\pagebreak
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & I am observing the data type in the code\\
+\WhenSc & I hover my mouse over a data structure\\
+\ThenSc & a tool-tip window show display, showing the \\ 
+        & attributes and methods of the data type.
+\end{tabular}
+\end{quote}
+
+
+
+% Feature - GitHub contributor
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & \textsf{GitHub} contributor\\
+\textbf{SO THAT I} & I possess the tools to develop a tool-tip activated \\                    
+                   & by mouse hover\\
+\textbf{I WANT TO} & construct a way for users to posses a greater understanding \\
+                   & of data structures in code.
+\end{tabular}
+\end{quote}
+
+
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & I am developing a wiki documentation\\
+\WhenSc & I click on ``Make Tool-Tip''\\
+\AndSc &  I specify which data structure I want to connect to\\
+\ThenSc & I should be able to develop a tool-tip explaining methods\\
+        &  \& attributes of the data structure.
+\end{tabular}
+\end{quote}
 \end{framed}
 
 
 
 
-% paul's user stories
+
+
+% PAUL
 \pagebreak
 \begin{framed}
-(PAUL)\\
 \Requirement{Does not have a visual way to view a whole project.}\\[0.2cm]
 
 \hrule~\\
 
 \Feature{Diagrams based on how files interact with one another}\\[0.2cm]
+
+% Feature
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & user (\textsf{GitHub} contributor)\\
+\textbf{SO THAT I} & can gain a deeper understanding of how the project\\
+                   & utilises other projects.\\
+\textbf{I WANT TO} & Find more projects linked to the current project.
+\end{tabular}
+\end{quote}
 
 % Scenario
 \noindent \textbf{Scenario}:
@@ -250,21 +296,11 @@
 \end{tabular}
 \end{quote}
 
-% Feature
-\noindent \textbf{Connextra Feature}:
-\begin{quote}
-\begin{tabular}{rl}
-\textbf{AS A}      & that I am viewing a project or file\\
-\textbf{SO THAT I} & can gain a deeper understanding of how the project\\
-                   & utilises other projects.\\
-\textbf{I WANT TO} & Find more projects linked to the current project.
-\end{tabular}
-\end{quote}
-
 \hrule~\\
 
-\Feature{ Holistic view of functions of code
-Scenario:}\\[0.2cm]
+\Feature{ Holistic view of functions of code.}\\[0.2cm]
+
+\noindent \CFeature{User (\textsf{GitHub} contributor)}{I}{can easily understand how a file works.}{get a simplified version of the current code.}
 
 % Scenario
 \noindent \textbf{Scenario}:
@@ -279,8 +315,74 @@ Scenario:}\\[0.2cm]
 \AndSc & are replaced with a list using arrows to show where functions link to
 \end{tabular}
 \end{quote}
-
-\noindent \CFeature{User (\textsf{GitHub} contributor)}{I}{can easily understand how a file works.}{get a simplified version of the current code.}
 \end{framed}
+
+
+
+\pagebreak
+\begin{framed}
+% ###########   ROBERT   ########### 
+
+\Requirement{Does not have the ability to search for users (contributors) based on how active they
+are and what kind of projects they contribute to.}\\[0.2cm]
+
+\hrule~\\
+
+\Feature{Searching for users based on how active they are.}\\[0.2cm]
+
+% Feature
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & User (\textsf{GitHub} author)\\
+\textbf{SO THAT I} & can collaborate with more active users\\
+\textbf{I WANT TO} & be able to search for users based on their average contributions
+\end{tabular}
+\end{quote}
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am on the main page\\
+\WhenSc  & I click on ``Find Users"\\
+\AndSc   & I select the parameter "Sort by User Activity" and click ``Search"\\
+\ThenSc  & I can see a filtered list of users based on their average \\ 
+         & daily/weekly contributions 
+\end{tabular}
+\end{quote}
+
+\hrule~\\
+
+\Feature{Searching for users based on what kind of projects they contribute to.}\\[0.2cm]
+
+% Feature
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & User (\textsf{GitHub} author)\\
+\textbf{SO THAT I} & can collaborate with users who have similar interests\\
+\textbf{I WANT TO} & be able to search for users based on the type of projects \\
+                   & they've contributed to.
+\end{tabular}
+\end{quote}
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am on the main page\\
+\WhenSc  & I click on ``Find Users"\\
+\ThenSc  & I can open up the ``Advanced Search"\\
+\WhenSc  & I select one of the project types under the ``Project Categories"\\
+         & subheading\\ 
+\AndSc   & I click ``Search"\\
+\ThenSc  & I can see a list of users who have contributed to any projects \\
+         & of the relevant type
+\end{tabular}
+\end{quote}
+\end{framed}
+
+
 
 \end{document}
