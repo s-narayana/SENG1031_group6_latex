@@ -7,6 +7,10 @@
 \renewcommand{\partname}{Phase}
 
 \begin{document}
+\input{"../titlepage.tex"}
+\tableofcontents
+\pagebreak
+
 \part{Project Scoping}
 \setcounter{section}{1}
 \setcounter{subsection}{0}
@@ -45,13 +49,11 @@ To create a website which interfaces with \textsf{GitHub}'s API allowing for a m
 \item Creation of shortcuts to speed up common tasks (utilising data supplied from the \emph{Statistics Team}).
 \end{itemize}
 \subsection{Individual Team Member Goals}
-\begin{enumerate}
-\item Josh - Browse multiple repositories on \textsf{GitHub} in order to devise a set of statistics which consider a project to be be more readily contributable.
-\item Daniel - Develop a system to aid users in selecting a project by displaying relevant statistics such as average input per contributor.  
-\item Paul - Develop a visual based system to manage and see the interactions between project files and other projects hosted on \textsf{GitHub}.
-\item Sanjay - Implementing methods for connecting functions from user code to the wiki. Also to oversee development of our project documentation using \LaTeX\ .
-\item Robert - To provide a more convenient way of viewing code by implementing the collapsing of functions/code blocks.
-\end{enumerate}
+\subsubsection{\textnormal{Josh - Browse multiple repositories on \textsf{GitHub} in order to devise a set of statistics which consider a project to be be more readily contributable.}} 
+\subsubsection{\textnormal{Daniel - Develop a system to aid users in selecting a project by displaying relevant statistics such as average input per contributor.}}   
+\subsubsection{\textnormal{Paul - Develop a visual based system to manage and see the interactions between project files and other projects hosted on \textsf{GitHub}.}} 
+\subsubsection{\textnormal{ Sanjay - Implementing methods for connecting functions from user code to the wiki. Also to oversee development of our project documentation using \LaTeX\ .}}
+\subsubsection{\textnormal{Robert - To provide a more convenient way of viewing code by implementing the collapsing of functions/code blocks.}} 
 
 \pagebreak
 \setcounter{section}{3}
@@ -59,26 +61,23 @@ To create a website which interfaces with \textsf{GitHub}'s API allowing for a m
 \section*{Deliverable 3}
 \subsection{Old Problem Statements}
 At the current state, \textsf{GitHub}:
-\begin{enumerate}
-\item  Does not have more advanced searching of repositories to find more readily contributable open source projects.
-\item Does not display enough statistics (e.g. Average input per contributor) to aid with choosing a new project.
-\item \textbf{Does not  have a visual way to view a whole project (e.g. how all the classes/files interact, UML diagrams generated from code).}
-\item Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.
-\item \textbf{Does not allow functions/blocks of code to be collapsed for easy targeted viewing online.}
-\end{enumerate}
+\subsubsection{\textnormal{Does not have more advanced searching of repositories to find more $~~$ readily contributable open source projects.}}
+\subsubsection{\textnormal{Does not display enough statistics (e.g. Average input per contributor) to aid with choosing a new project.} }
+\subsubsection{*\textnormal{Does not  have a visual way to view a whole project (e.g. how all the classes/files interact, UML diagrams generated from code).} }
+\subsubsection{\textnormal{Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.} }
+\subsubsection{*\textnormal{Does not allow functions/blocks of code to be collapsed for easy targeted viewing online.}}
 
 \subsection{New Problem Statements}
 At the current state, \textsf{GitHub}:
-\begin{enumerate}
-\item  Does not have more advanced searching of repositories to find more readily contributable open source projects.
-\item Does not display enough statistics (e.g. Average input per contributor) to aid with choosing a new project.
-\item Does not  have a visual way to view a whole project (e.g. how all the classes/files interact, collapsing of functions/blocks of code).
-\item Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.
-\item Does not have the ability to search for users (contributors) based on how active they are and what kind of projects they contribute to.
-\end{enumerate}
+\subsubsection{\textnormal{Does not have more advanced searching of repositories to find more $~~$ readily contributable open source projects.}}
+\subsubsection{\textnormal{Does not display enough statistics (e.g. Average input per contributor) to aid with choosing a new project.}}
+\subsubsection{Does not  have a visual way to view a whole project (e.g. how all the classes/files interact, collapsing of functions/blocks of code).} 
+\subsubsection{\textnormal{Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.}}
+\subsubsection{Does not have the ability to search for users (contributors) based on how active they are and what kind of projects they contribute to.}
 
+\vfill
 \subsection{Explanation of Problem Statement Changes}
-Problem statement 5 was found to be very specific and didn't allow enough room for creating features that could stem off of it. Also we thought of a new idea that GitHub did not have, the ability for authors' of repositories to search for other coders to contribute to their project. Subsequently, the old problem statement 5 was able to be easily merged with no. 3, giving it more breadth to allow for more features to be described.
+Problem statement 5 was found to be very specific and didn't allow enough room for creating features that could stem off of it. Also we thought of a new idea that GitHub did not have, the ability for authors' of repositories to search for other coders to contribute to their project. Subsequently, the old problem statement 5 was able to be easily merged with problem statement 3, giving it more breadth to allow for more features to be described.
 
 \subsection{Inference for Problem Statements}
 Inference for our problem statements stemmed from previous work and experience with \textsf{GitHub}. With a moderate level of knowledge of \textsf{GitHub}, we were able to identify a lack of features prevalent within usage of the system. Those of us who had lacked experience with usage of \textsf{GitHub} were quick to investigate and understand some important features to be missing.
