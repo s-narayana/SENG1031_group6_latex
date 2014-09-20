@@ -61,7 +61,7 @@
 
 
 \begin{framed}
-\Requirement{Does not have more advanced searching of repositories to find more readily contributable open source projects.}\\[0.2cm]
+\Requirement{A more advanced searching of repositories to find more readily contributable open source projects.}\\[0.2cm]
 
 \hrule~\\
 
@@ -98,7 +98,7 @@
 \end{framed}
 
 \begin{framed}
-\Requirement{Does not display enough statistics to aid with choosing a new project.}\\[0.2cm]
+\Requirement{Display enough statistics to aid with choosing a new project.}\\[0.2cm]
 
 \hrule~\\
 
@@ -137,7 +137,7 @@
 \begin{framed}
 %%% TEMPLATE %%%
 % Requirement (problem statement)
-\Requirement{Does not link documentation from a repository's wiki with the relevant functions/lines in the project's code.}\\[0.2cm]
+\Requirement{Link documentation from a repository's wiki with the relevant functions/lines in the project's code.}\\[0.2cm]
 
 \hrule~\\
 
@@ -243,7 +243,7 @@
 % PAUL
 \pagebreak
 \begin{framed}
-\Requirement{Does not have a visual way to view a whole project.}\\[0.2cm]
+\Requirement{A visual way to view a whole project.}\\[0.2cm]
 
 \hrule~\\
 
@@ -296,8 +296,7 @@
 \begin{framed}
 % ###########   ROBERT   ########### 
 
-\Requirement{Does not have the ability to search for users (contributors) based on how active they
-are and what kind of projects they contribute to.}\\[0.2cm]
+\Requirement{The ability to search for users (contributors) based on how active they are and what kind of projects they contribute to.}\\[0.2cm]
 
 \hrule~\\
 
@@ -329,7 +328,7 @@ are and what kind of projects they contribute to.}\\[0.2cm]
 
 \noindent\textbf{10.}\Feature{Searching for users based on what kind of projects they contribute to.}\\[0.2cm]
 
-% Feature
+% CFeature
 \noindent \textbf{Connextra Feature}:
 \begin{quote}
 \begin{tabular}{rl}
@@ -354,8 +353,51 @@ are and what kind of projects they contribute to.}\\[0.2cm]
          & of the relevant type
 \end{tabular}
 \end{quote}
+
+\pagebreak
+
+% ROBERT'S NEW SUB-FEATURE
+\noindent\textbf{11.}\Feature{Users can sort their projects/repositories according to category.}\\[0.2cm]
+
+% CFeature
+\noindent \textbf{Connextra Feature}:
+\begin{quote}
+\begin{tabular}{rl}
+\textbf{AS A}      & \textsf{Github} author\\
+\textbf{SO THAT I} & have an alternative to sorting my projects\\
+\textbf{I WANT TO} & be able to sort my projects by their category \\
+\end{tabular}
+\end{quote}
+
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am viewing my own \textsf{Github} profile\\
+\WhenSc  & I click on the ``Repositories" tab\\
+\AndSc   & I click on ``New"\\
+\ThenSc  & there should a "Category" heading under the description text box\\
+\AndSc   & I should be able to select a project category from the list
+\end{tabular}
+\end{quote}
+
+% Scenario
+\noindent \textbf{Scenario}:
+\begin{quote}
+\begin{tabular}{rl}
+\GivenSc & that I am viewing my \textsf{Github} profile\\
+\WhenSc  & I click on the ``Repositories" tab\\
+\ThenSc  & I can open up the ``Advanced Search"\\
+\WhenSc  & I select ``Sort by project category"\\
+\AndSc   & I click ``Search"\\
+\ThenSc  & I can see my projects sorted into columns\\ 
+         & (one column for each project type)
+\end{tabular}
+\end{quote}
 \end{framed}
 
+\pagebreak
 \input{"../glossary.tex"}
 
 \end{document}
